@@ -1,4 +1,4 @@
-.github/workflows/build-apk.ym
+.github/workflows/build-apk.yml
 name: Build Android APK
 
 on:
@@ -22,7 +22,8 @@ jobs:
           java-version: '17'
 
       - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
+        uses:
+android-actions/setup-android@v3
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
@@ -36,4 +37,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: UN7KAI-WebSDR-APK
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: app/build/outputs/apk/debug/
+app-debug.apk
