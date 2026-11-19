@@ -1,12 +1,12 @@
 plugins { id 'com.android.application' }
 
 android {
-    namespace 'kz.un7kai.websdr'
-    compileSdk 34
+    namespace 'com.un7kai.websdr'
+    compileSdk 35
     defaultConfig {
-        applicationId 'kz.un7kai.websdr'
+        applicationId 'com.un7kai.websdr'
         minSdk 23
-        targetSdk 28
+        targetSdk 35
         versionCode 1
         versionName '1.0'
     }
